@@ -1,0 +1,20 @@
+{
+  "Group": "Halokllr",
+  "Name": "Brews and Steeps",
+  "Version": "1.0.0",
+  "Description": "This project adds the brewing process to HyTale, including a fermenter for drinks, a dedicated workbench for preparing all of the fermenting ingredients and various drinks with varying abilities.    This mod is a WIP and I will be adding more recipes, ben",
+  "Authors": [
+    {
+      "Name": "Halo",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
