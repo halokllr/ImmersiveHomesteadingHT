@@ -1,0 +1,92 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Brew_Juice_Grape.name",
+    "Description": "server.items.Brew_Juice_Grape.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Uncommon",
+  "Icon": "Icons/ItemsGenerated/Brew_Juice_Grape.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Resources/Jar_Filled.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jar_Juice_Grape.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#e8dd7a",
+    "Opacity": "Semitransparent",
+    "RequiresAlphaBlending": true,
+    "PlacementSettings": {
+      "PlaceInEmptyBlocks": true
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "Quantity": 1,
+        "ResourceTypeId": "Fruits_Grape"
+      },
+      {
+        "ItemId": "Ingredient_Sugar",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "*Container_Bucket_State_Filled_Water"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Brew_Juice_Grape",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Container_Bucket"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Brewingbench",
+        "Categories": [
+          "Kettle"
+        ]
+      }
+    ],
+    "TimeSeconds": 30
+  },
+  "ItemLevel": 10,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Stamina_Boost_Large"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Health_Restore_Small"
+        }
+      ]
+    }
+  }
+}

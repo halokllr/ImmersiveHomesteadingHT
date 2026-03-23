@@ -1,0 +1,272 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Plant_Crop_Grapes_Red_StageFinal.name"
+  },
+  "Parent": "Template_Crop_Block",
+  "BlockType": {
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Grapes.png",
+        "Weight": 1
+      }
+    ],
+    "State": {
+      "Definitions": {
+        "Stage1": {
+          "CustomModel": "Resources/Ingredients/Grapes_01.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Resources/Ingredients/Grapes.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Ladder",
+          "BlockParticleSetId": "Grass",
+          "BlockSoundSetId": "Plant",
+          "ParticleColor": "#4ea333",
+          "CustomModelScale": 1,
+          "Material": "Solid",
+          "Opacity": "Semitransparent",
+          "RandomRotation": "None",
+          "VariantRotation": "Wall",
+          "RotationYawPlacementOffset": "Ninety",
+          "PlacementSettings": {
+            "RotationMode": "FacingPlayer"
+          },
+          "Gathering": {
+            "Breaking": {
+              "GatherType": "Woods",
+              "ItemId": "Plant_Planters_Trellis_Softwood",
+              "DropList": "Drops_Plant_Crop_Grapes_Red_Stage1"
+            }
+          },
+          "MovementSettings": {
+            "IsClimbable": true
+          }
+        },
+        "Stage2": {
+          "CustomModel": "Resources/Ingredients/Grapes_02.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Resources/Ingredients/Grapes.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Ladder",
+          "Gathering": {
+            "Soft": {
+              "IsWeaponBreakable": false,
+              "DropList": "Drops_Plant_Crop_Grapes_Red_Stage2"
+            }
+          },
+          "BlockParticleSetId": "Grass",
+          "BlockSoundSetId": "Plant",
+          "ParticleColor": "#4ea333",
+          "Material": "Solid",
+          "Opacity": "Solid",
+          "CustomModelScale": 1,
+          "RandomRotation": "None",
+          "MovementSettings": {
+            "IsClimbable": true
+          }
+        },
+        "Stage3": {
+          "CustomModel": "Resources/Ingredients/Grapes_03.blockymodel",
+          "Gathering": {
+            "Soft": {
+              "IsWeaponBreakable": false,
+              "DropList": "Drops_Plant_Crop_Grapes_Red_Stage3"
+            }
+          },
+          "BlockParticleSetId": "Grass",
+          "BlockSoundSetId": "Plant",
+          "HitboxType": "Ladder",
+          "ParticleColor": "#5da333",
+          "CustomModelTexture": [
+            {
+              "Texture": "Resources/Ingredients/Grapes.png",
+              "Weight": 1
+            }
+          ],
+          "Material": "Solid",
+          "RandomRotation": "None",
+          "MovementSettings": {
+            "IsClimbable": true
+          }
+        },
+        "StageFinal": {
+          "CustomModel": "Resources/Ingredients/Grapes_04.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Resources/Ingredients/Grapes2.png",
+              "Weight": 5
+            }
+          ],
+          "InteractionHint": "server.interactionHints.harvest",
+          "Gathering": {
+            "Soft": {
+              "IsWeaponBreakable": false,
+              "DropList": "Drops_Plant_Crop_Grapes_Red_StageFinal"
+            },
+            "Harvest": {
+              "DropList": "Drops_Plant_Crop_Grapes_Red_StageFinal_Harvest"
+            }
+          },
+          "BlockParticleSetId": "Grass",
+          "BlockSoundSetId": "Plant",
+          "HitboxType": "Ladder",
+          "ParticleColor": "#718a25",
+          "Material": "Solid",
+          "Opacity": "Semitransparent",
+          "CustomModelScale": 1,
+          "Interactions": {
+            "Use": {
+              "Interactions": [
+                {
+                  "Type": "HarvestCrop"
+                }
+              ]
+            }
+          },
+          "RandomRotation": "None",
+          "MovementSettings": {
+            "IsClimbable": true
+          }
+        }
+      }
+    },
+    "Farming": {
+      "Stages": {
+        "Default": [
+          {
+            "Duration": {
+              "Min": 10500,
+              "Max": 10500
+            },
+            "Type": "BlockState",
+            "State": "default"
+          },
+          {
+            "Duration": {
+              "Min": 25300,
+              "Max": 25300
+            },
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow",
+            "State": "Stage1"
+          },
+          {
+            "Duration": {
+              "Min": 25300,
+              "Max": 25300
+            },
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow",
+            "State": "Stage2"
+          },
+          {
+            "Duration": {
+              "Min": 25300,
+              "Max": 25300
+            },
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow",
+            "State": "Stage3"
+          },
+          {
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow_Stage_Complete",
+            "State": "StageFinal"
+          }
+        ],
+        "Harvested": [
+          {
+            "Duration": {
+              "Min": 25300,
+              "Max": 25300
+            },
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow",
+            "State": "Stage1"
+          },
+          {
+            "Duration": {
+              "Min": 25300,
+              "Max": 25300
+            },
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow",
+            "State": "Stage2"
+          },
+          {
+            "Duration": {
+              "Min": 25300,
+              "Max": 25300
+            },
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow",
+            "State": "Stage3"
+          },
+          {
+            "Type": "BlockState",
+            "SoundEventId": "SFX_Crops_Grow_Stage_Complete",
+            "State": "StageFinal"
+          }
+        ]
+      },
+      "StartingStageSet": "Default",
+      "ActiveGrowthModifiers": [
+        "Fertilizer",
+        "Water",
+        "LightLevel"
+      ],
+      "StageSetAfterHarvest": "Harvested"
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Plant_Planters_Trellis_Softwood",
+        "DropList": {
+          "Parent": "Drops_Plant_Crop_Grapes_Red_Block"
+        }
+      },
+      "Physics": {
+        "ItemId": "Plant_Planters_Trellis_Softwood"
+      }
+    },
+    "ParticleColor": "#e1cc75",
+    "CustomModel": "Resources/Ingredients/Grapes_01.blockymodel",
+    "CustomModelScale": 1,
+    "Material": "Solid",
+    "Support": {
+      "Down": [
+        {
+          "Support": "Ignored"
+        }
+      ]
+    },
+    "RandomRotation": "None",
+    "DrawType": "Model",
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer"
+    },
+    "RotationYawPlacementOffset": "OneEighty",
+    "MovementSettings": {
+      "IsClimbable": true
+    },
+    "HitboxType": "Ladder"
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Plant_Crop_Grapes_Red_Block.png"
+}

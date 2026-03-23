@@ -1,0 +1,80 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Brew_Coffee.name",
+    "Description": "server.items.Brew_Coffee.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Uncommon",
+  "Icon": "Icons/ItemsGenerated/Brew_Coffee.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Resources/Coffee_Cup.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Bucket_Texture_Coffee.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#e8dd7a",
+    "Opacity": "Semitransparent",
+    "RequiresAlphaBlending": true
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Coffee_Grounds",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "*Container_Bucket_State_Filled_Water"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Brew_Coffee",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Container_Bucket"
+      }
+    ],
+    "TimeSeconds": 10,
+    "BenchRequirement": [
+      {
+        "Id": "Brewingbench",
+        "Categories": [
+          "Kettle"
+        ]
+      }
+    ]
+  },
+  "ItemLevel": 10,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -1,
+      -12
+    ]
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Stamina_Boost_Large"
+        }
+      ]
+    }
+  }
+}

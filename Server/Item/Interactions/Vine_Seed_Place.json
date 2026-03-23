@@ -1,0 +1,15 @@
+{
+  "Type": "ChangeBlock",
+  "Changes": {
+    "Plant_Planters_Trellis_Softwood": "Plant_Crop_Grapes_Red_Block"
+  },
+  "UseLatestTarget": true,
+  "Next": {
+    "Type": "ModifyInventory",
+    "RequiredGameMode": "Adventure",
+    "AdjustHeldItemQuantity": -1,
+    "Effects": {
+      "ItemAnimationId": "Interact"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "Type": "BlockCondition",
+  "Next": {
+    "Type": "Replace",
+    "Var": "SpigotId",
+    "DefaultValue": {
+      "Interactions": [
+        "Bench_Multi_Fermenting_Spigot_Place"
+      ]
+    }
+  },
+  "UseLatestTarget": false,
+  "RunTime": 0.15,
+  "Rules": {
+    "Blocking": [
+      "Primary"
+    ]
+  },
+  "Matchers": [
+    {
+      "Block": {
+        "Id": "Bench_Multi_Fermenting_Container_Wooden_Barrel"
+      },
+      "Face": "North",
+      "StaticFace": true
+    },
+    {
+      "Block": {
+        "Id": "Bench_Multi_Fermenting_Container_Wooden_Barrel"
+      },
+      "Face": "East",
+      "StaticFace": true
+    },
+    {
+      "Block": {
+        "Id": "Bench_Multi_Fermenting_Container_Wooden_Barrel"
+      },
+      "Face": "South",
+      "StaticFace": true
+    },
+    {
+      "Block": {
+        "Id": "Bench_Multi_Fermenting_Container_Wooden_Barrel"
+      },
+      "Face": "West",
+      "StaticFace": true
+    }
+  ]
+}

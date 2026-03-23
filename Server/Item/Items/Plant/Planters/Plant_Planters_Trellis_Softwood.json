@@ -1,0 +1,93 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Plant_Planters_Trellis_Softwood.name",
+    "Description": "server.items.Plant_Planters_Trellis_Softwood.description"
+  },
+  "ItemLevel": 15,
+  "MaxStack": 10,
+  "Icon": "Icons/ItemsGenerated/Plant_Planters_Trellis_Softwood.png",
+  "Categories": [
+    "Brews_And_Steeps.Deco"
+  ],
+  "FuelQuality": 3.0,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "Set": "Wood_Softwood_Planks",
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Softwood",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Builders",
+        "Type": "StructuralCrafting",
+        "Categories": [
+          "Beam"
+        ]
+      }
+    ],
+    "OutputQuantity": 2
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Resources/Wood_Trellis.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Grapes_Red_1.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Ladder",
+    "Flags": {},
+    "BlockParticleSetId": "Grass",
+    "ParticleColor": "#2b652b",
+    "BlockSoundSetId": "Branch",
+    "Group": "Wood",
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer",
+      "BlockPreviewVisibility": "AlwaysVisible",
+      "AllowRotationKey": true
+    },
+    "VariantRotation": "NESW",
+    "MovementSettings": {
+      "IsClimbable": true
+    }
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "SubType": [
+      "Trellis"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

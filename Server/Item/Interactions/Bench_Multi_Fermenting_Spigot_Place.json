@@ -1,0 +1,6 @@
+{
+  "Type": "PlaceBlock",
+  "RemoveItemInHand": true,
+  "RunTime": 0.15,
+  "BlockTypeToPlace": "Rock_Stone_Cobble"
+}

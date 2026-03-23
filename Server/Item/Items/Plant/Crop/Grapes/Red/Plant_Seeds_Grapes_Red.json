@@ -1,0 +1,63 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Plant_Seeds_Grapes_Red.name",
+    "Description": "server.items.Plant_Seeds_Grapes_Red.description"
+  },
+  "Parent": "Template_Seeds",
+  "Quality": "Junk",
+  "InteractionVars": {
+    "SeedId": {
+      "Interactions": [
+        {
+          "Parent": "Vine_Seed_Place",
+          "Changes": {
+            "Plant_Planters_Trellis_Softwood": "Plant_Crop_Grapes_Red_Block"
+          }
+        }
+      ]
+    }
+  },
+  "Texture": "Resources/Grapes_Red.png",
+  "Icon": "Icons/ItemsGenerated/Plant_Seeds_Grapes_Red.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0,
+      30,
+      15
+    ],
+    "Translation": [
+      2.5,
+      -11
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 0,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 3
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Plant_Seeds_Grapes_Red",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Farmingbench",
+        "Categories": [
+          "Seeds"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "ItemLevel": 4,
+  "Interactions": {
+    "Secondary": "Vine_Seed_Condition"
+  }
+}

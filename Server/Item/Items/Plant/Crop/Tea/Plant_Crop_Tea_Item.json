@@ -1,0 +1,36 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Plant_Crop_Tea_Item.name",
+    "Description": "server.items.Plant_Crop_Tea_Item.description"
+  },
+  "Parent": "Template_Crop_Item",
+  "Icon": "Icons/ItemsGenerated/Plant_Crop_Tea_Item.png",
+  "PlayerAnimationsId": {
+    "Parent": "Item",
+    "Animations": {
+      "Consume": {
+        "FirstPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat_Side/Eat_Side_FPS.blockyanim",
+        "ThirdPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat_Side/Eat_Side.blockyanim",
+        "Speed": 1,
+        "Looping": true
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.675,
+    "Rotation": [
+      23,
+      189,
+      9
+    ],
+    "Translation": [
+      -4.2,
+      -2.4
+    ]
+  },
+  "Texture": "Resources/Ingredients/Corn_Texture.png",
+  "Model": "Resources/Tea.blockymodel",
+  "Scale": 1.5,
+  "Quality": "Common",
+  "DropOnDeath": true
+}

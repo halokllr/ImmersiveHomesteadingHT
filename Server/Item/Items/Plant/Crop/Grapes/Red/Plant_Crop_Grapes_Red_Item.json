@@ -1,0 +1,41 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Plant_Crop_Grapes_Red_Item.name",
+    "Description": "server.items.Plant_Crop_Grapes_Red_Item.description"
+  },
+  "Parent": "Template_Crop_Item",
+  "Icon": "Icons/ItemsGenerated/Plant_Crop_Grapes_Red_Item.png",
+  "PlayerAnimationsId": {
+    "Parent": "Item",
+    "Animations": {
+      "Consume": {
+        "FirstPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat_Side/Eat_Side_FPS.blockyanim",
+        "ThirdPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat_Side/Eat_Side.blockyanim",
+        "Speed": 1,
+        "Looping": true
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 1.5,
+    "Rotation": [
+      23,
+      273,
+      0
+    ],
+    "Translation": [
+      1,
+      -5
+    ]
+  },
+  "Texture": "Resources/Ingredients/Grapes_Red.png",
+  "Model": "Resources/Coffee.blockymodel",
+  "Scale": 1.5,
+  "Quality": "Common",
+  "DropOnDeath": true,
+  "ResourceTypes": [
+    {
+      "Id": "Fruits_Grape"
+    }
+  ]
+}

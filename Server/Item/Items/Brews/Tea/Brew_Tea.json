@@ -1,0 +1,77 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Brew_Tea.name",
+    "Description": "server.items.Brew_Tea.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Uncommon",
+  "Icon": "Icons/ItemsGenerated/Brew_Moonshine.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Resources/Container_Moonshine_Jar.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Moonshine_Jar_Filled_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#e8dd7a"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Tea_Leaves",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Brew_Tea",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Brewingbench",
+        "Categories": [
+          "Kettle"
+        ]
+      }
+    ],
+    "TimeSeconds": 5
+  },
+  "ItemLevel": 10,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -1,
+      -9
+    ]
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Health_Regen_Small"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Stamina_Regen_Small"
+        }
+      ]
+    }
+  }
+}

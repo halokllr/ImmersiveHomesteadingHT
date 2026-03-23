@@ -1,0 +1,28 @@
+{
+  "Icon": "Icons/ItemCategories/Items.png",
+  "Order": 4,
+  "Children": [
+    {
+      "Id": "Seeds",
+      "Name": "Seeds",
+      "Icon": "Icons/ItemCategories/Natural-Vegetal.png"
+    },
+    {
+      "Id": "Bench",
+      "Name": "Benches",
+      "Icon": "Icons/ItemCategories/Bench.png",
+      "Children": [
+        {
+          "Id": "Multi",
+          "Name": "Multi",
+          "Icon": "Icons/ItemCategories/Bench.png"
+        }
+      ]
+    },
+    {
+      "Id": "Deco",
+      "Name": "Deco",
+      "Icon": "Icons/ItemCategories/Items-Tools.png"
+    }
+  ]
+}

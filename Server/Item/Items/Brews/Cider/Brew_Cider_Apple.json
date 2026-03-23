@@ -1,0 +1,88 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Brew_Cider_Apple.name",
+    "Description": "server.items.Brew_Cider_Apple.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T3"
+  },
+  "Quality": "Uncommon",
+  "Icon": "Icons/ItemsGenerated/Brew_Cider_Apple.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Resources/Jar_Filled.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jar_Cider_Apple.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#e8dd7a",
+    "Opacity": "Semitransparent",
+    "RequiresAlphaBlending": true,
+    "PlacementSettings": {
+      "PlaceInEmptyBlocks": true
+    }
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Plant_Fruit_Apple",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Sugar",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "*Container_Bucket_State_Filled_Water"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Brew_Cider_Apple",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Container_Bucket"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Brewingbench",
+        "Categories": [
+          "Kettle"
+        ]
+      }
+    ],
+    "TimeSeconds": 30
+  },
+  "ItemLevel": 10,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -1,
+      -9
+    ]
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Stamina_Boost_Large"
+        }
+      ]
+    }
+  }
+}

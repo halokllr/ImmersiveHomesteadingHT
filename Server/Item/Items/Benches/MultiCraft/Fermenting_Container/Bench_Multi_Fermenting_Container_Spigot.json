@@ -1,0 +1,145 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_Fermenter.name",
+    "Description": "server.items.Bench_Fermenter.description"
+  },
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Semitransparent",
+    "CustomModel": "Resources/Keg_Spigot.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Fermenter_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Bench_Spigot",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#63422b",
+    "BlockSoundSetId": "Wood",
+    "Interactions": {
+      "Use": "Open_Processing_Bench"
+    },
+    "Bench": {
+      "Type": "Processing",
+      "Input": [
+        {
+          "FilterValidIngredients": true
+        }
+      ],
+      "OutputSlotsCount": 1,
+      "LocalOpenSoundEventId": "SFX_Lumbermill_Bench_Open",
+      "LocalCloseSoundEventId": "SFX_Lumbermill_Bench_Close",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "Fermenter",
+      "TierLevels": [
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Leather_Light",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Leather_Medium",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Leather_Heavy",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Chitin_Sturdy",
+                "Quantity": 5
+              }
+            ],
+            "TimeSeconds": 3
+          },
+          "CraftingTimeReductionModifier": 0.0
+        },
+        {
+          "ExtraInputSlot": 1,
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Leather_Light",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Leather_Medium",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Leather_Heavy",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Chitin_Sturdy",
+                "Quantity": 5
+              }
+            ],
+            "TimeSeconds": 3
+          },
+          "CraftingTimeReductionModifier": 0.05
+        },
+        {
+          "ExtraInputSlot": 3,
+          "CraftingTimeReductionModifier": 0.25
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Keg"
+        }
+      ]
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemLevel": 3,
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "Icon": "Icons/ItemsGenerated/Bench_Multi_Fermenting_Container_Spigot.png",
+  "Interactions": {
+    "Secondary": "Bench_Multi_Fermenting_Container_Spigot"
+  },
+  "InteractionVars": {
+    "SpigotId": {
+      "Interactions": [
+        {
+          "Parent": "Bench_Multi_Fermenting_Spigot_Place",
+          "BlockTypeToPlace": "Bench_Multi_Fermenting_Container_Spigot"
+        }
+      ]
+    }
+  }
+}

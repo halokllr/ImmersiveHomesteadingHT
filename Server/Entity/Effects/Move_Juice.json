@@ -1,0 +1,7 @@
+{
+  "Duration": 10,
+  "ApplicationEffects": {
+    "ScreenEffect": "ScreenEffects/Snow.png",
+    "HorizontalSpeedMultiplier": 2.5
+  }
+}

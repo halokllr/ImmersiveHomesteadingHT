@@ -1,0 +1,21 @@
+{
+  "Type": "BlockCondition",
+  "Next": {
+    "Type": "Replace",
+    "Var": "SeedId",
+    "DefaultValue": {
+      "Interactions": [
+        "Vine_Seed_Place"
+      ]
+    }
+  },
+  "UseLatestTarget": false,
+  "Matchers": [
+    {
+      "Block": {
+        "Id": "Plant_Planters_Trellis_Softwood"
+      }
+    }
+  ],
+  "RunTime": 0.15
+}

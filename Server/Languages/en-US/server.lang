@@ -1,0 +1,138 @@
+#   Resource Types
+resourceType.Fruits_Grape.name=Any Grapes
+resourceType.Deco_Bottles.name=Any Bottles
+
+
+#   Bench Categories
+benchCategories.ingredients.name=Ingredients
+benchCategories.prepared.name=Prepared
+benchCategories.kettle.name=Kettle
+
+
+#   Items
+#      Benches
+items.Bench_Brewers_Kettle.name=Brewer's Kettle
+items.Bench_Brewers_Kettle.description=Used to create the mash.
+
+items.Bench_Fermenter.name=Fermenter
+items.Bench_Fermenter.description=Used to ferment mixtures.
+
+items.Bench_Still.name=Still
+items.Bench_Still.description=Used to distill spirits.
+
+#       Multi
+items.Bench_Multi_Fermenting_Container_Wooden_Barrel.name=Wooden Fermenting Keg
+
+
+#      Brews
+#          Beer
+
+#          Cider
+items.Brew_Cider_Apple.name=Apple Cider
+items.Brew_Cider_Apple.description=A warming drink.
+
+items.Brew_Cider_Rogue.name=Rogue's Cider
+items.Brew_Cider_Rogue.description=Brewed to keep the rogue on the move.
+
+#          Coffee
+items.Brew_Coffee.name=Coffee
+items.Brew_Coffee.description=A tad bitter.
+
+#          Juice
+items.Brew_Juice_Apple.name=Apple Juice
+items.Brew_Juice_Apple.description=I hope we have enough for the whole team...
+
+items.Brew_Juice_Grape.name=Grape Juice
+items.Brew_Juice_Grape.description=It's a little bitter, a little sweet.
+
+#          Spirits
+items.Brew_Moonshine.name=Moonshine
+items.Brew_Moonshine.description=It's 140 proof!
+
+items.Brew_Whiskey.name=Whiskey
+items.Brew_Whiskey.description=Tastes a little bit like smoked wood.
+
+#          Tea
+items.Brew_Tea.name=Tea
+items.Brew_Tea.description=Basic tea
+
+items.Brew_Tea_Mage.name=Mage's Tea
+items.Brew_Tea_Mage.description=Brewed to keep the mage in the fight.
+
+#          Wine
+items.Brew_Wine_Red.name=Red Wine
+items.Brew_Wine_Red.description=It's a bit dry..
+
+#      Containers
+
+#      Deco
+items.Deco_Empty_Jar.name=Empty Jar
+items.Deco_Empty_Jar.description=Good for carrying liquids.
+
+items.Deco_Empty_Bottle_Wine.name=Empty Wine Bottle
+items.Deco_Empty_Bottle_Wine.description=Good for carrying wine.
+
+
+#      Ingredients
+items.Ingredient_Coffee_Grounds.name=Coffee Grounds
+items.Ingredient_Coffee_Grounds.description=Probably not too good without some hot water...
+
+items.Ingredient_Milled_Corn.name=Milled Corn
+items.Ingredient_Milled_Corn.description=Ground up corn used for various mashes.
+
+items.Ingredient_Moonshine_Mash.name=Moonshine Mash
+items.Ingredient_Moonshine_Mash.description=Mash for turning in to moonshine.
+
+items.Ingredient_Sugar.name=Sugar
+items.Ingredient_Sugar.description=Makes things sweet!
+
+items.Ingredient_Tea_Leaves.name=Tea Leaves
+items.Ingredient_Tea_Leaves.description=Regular tea leaves.
+
+items.Ingredient_Whiskey_Mash.name=Whiskey Mash
+items.Ingredient_Whiskey_Mash.description=Mash for turning in to whiskey.
+
+items.Ingredient_Wine_Red_Mash.name=Red Wine Mash
+items.Ingredient_Wine_Red_Mash.description=Mash for turning in to red wine.
+
+
+#      Plant
+#           Seed
+items.Plant_Seeds_Coffee.name=Coffee Seed Bag
+items.Plant_Seeds_Coffee.description=Grows coffee.
+
+items.Plant_Seeds_Grapes_Red.name=Red Grape Seed Bag
+items.Plant_Seeds_Grapes_Red.description=Grows red grapes.
+
+items.Plant_Seeds_Sugar_Cane.name=Sugar Cane Seed Bag
+items.Plant_Seeds_Sugar_Cane.description=Grows sugar cane.
+
+items.Plant_Seeds_Tea.name=Tea Seed Bag
+items.Plant_Seeds_Tea.description=Grows tea.
+
+
+#           Crop
+#               Coffee
+items.Plant_Crop_Coffee_Item.name=Coffee
+items.Plant_Crop_Coffee_Item.description=Raw coffee beans.
+items.Plant_Crop_Coffee_StageFinal.name=Mature Coffee Beans
+
+#               Grapes
+items.Plant_Crop_Grapes_Red_Item.name=Red Grapes
+items.Plant_Crop_Grapes_Red_Item.description=Raw red grapes.
+items.Plant_Crop_Grapes_Red_StageFinal.name=Mature Red Grapes
+
+#               Sugar Cane
+items.Plant_Crop_Sugar_Cane_Item.name=Sugar Cane
+items.Plant_Crop_Sugar_Cane_Item.description=Raw sugar cane.
+items.Plant_Crop_Sugar_Cane_StageFinal.name=Mature Sugar Cane
+
+#               Tea
+items.Plant_Crop_Tea_Item.name=Tea
+items.Plant_Crop_Tea_Item.description=Raw tea leaves.
+items.Plant_Crop_Tea_StageFinal.name=Mature Tea Leaves
+
+
+#           Planters
+items.Plant_Planters_Trellis_Softwood.name=Trellis
+items.Plant_Planters_Trellis_Softwood.description=Trellis for growing vines.
